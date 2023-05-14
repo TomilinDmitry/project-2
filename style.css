@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    display: flex;
+    width: 98%;
+    min-height: 100%;
+    overflow: hidden;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+body {
+    height: 100%;
+}
+
+
+/* Header */
+header {
+    background-color: blueviolet;
+}
+
+.header_container {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+/* Menu */
+
+.menu {
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+}
+
+.second__menu {
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+}
+
+/* Menu */
+
+.list__menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+    list-style: none;
+    font-size: 1.1250em;
+    gap: 5em;
+    font-weight: 700;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: linear, 1s;
+}
+
+.header__menu_none {
+    display: none;
+    color: white;
+    list-style: none;
+    font-size: 1.1250em;
+    gap: 2em;
+    font-weight: 700;
+    margin-top: 1em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.header_img {
+    width: 100px;
+}
+
+.header__text {
+    display: flex;
+    align-items: center;
+}
+
+/* Transition */
+li {
+    transition: linear, 0.7s;
+}
+
+li:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.header__menu_none:hover {
+    color: red;
+    cursor: pointer;
+}
+
+/* Transition */
+
+
+/* MAIN */
+
+.main_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main__form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 30%;
+    text-align: center;
+}
+
+#form_buy__list {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+
+}
+
+.label__buylist {
+    font-size: 2em;
+}
+
+.input__buylist {
+    padding: 1em;
+    border-radius: 5px;
+}
+
+.button__buylist {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1rem;
+    width: 20%;
+}
+
+#buy_list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.5em;
+}
+
+#button_buy__list {
+    padding: 1em;
+    border-radius: 5px;
+    transition: linear 0.4s;
+}
+
+#button_buy__list:hover {
+    background-color: orangered;
+    cursor: pointer;
+}
+
+
+/* Media */
+@media screen and (max-width:1300px) {
+    .header_container {
+        justify-content: center;
+    }
+
+    .header__text {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header__menu_none {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+    }
+
+    .list__menu {
+        display: none;
+    }
+
+    .header_img {
+        width: 100px;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .header__menu_none {
+        gap: 1em
+    }
+
+    .main__form {
+        transition: linear, 1s;
+        width: 50%;
+    }
+
+    .button__buylist {
+        transition: linear, 1s;
+        width: 40%;
+    }
+
+}
+
+@media screen and (max-width:730px) {
+    .header__menu_none {
+
+        flex-direction: column;
+        transition: linear, 1s;
+    }
+
+    .main__form {
+        transition: linear, 1s;
+        width: 50%;
+    }
+
+    .button__buylist {
+        transition: linear, 1s;
+        width: 30%;
+    }
+}
+
+@media screen and (max-width:640px) {
+    .main__form {
+        transition: linear, 1s;
+        width: 70%;
+    }
+
+    .button__buylist {
+        transition: linear, 1s;
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:470px) {
+    .main__form {
+        transition: linear, 1s;
+        width: 85%;
+    }
+
+    .button__buylist {
+        transition: linear, 1s;
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:380px) {
+    .main__form {
+        transition: linear, 1s;
+        width: 98%;
+    }
+
+    .button__buylist {
+        transition: linear, 1s;
+        width: 85%;
+    }
+
+    .header__title {
+        font-size: 1.5rem;
+    }
+
+    .label__buylist {
+        transition: linear, 1s;
+        font-size: 1.7rem;
+        font-weight: 600;
+    }
+
+    .main__text {
+        transition: linear, 1s;
+        font-size: 1.5rem;
+    }
+
+}

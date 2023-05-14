@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cписок покупок</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="header_container">
+                <div class="menu">
+                    <ul class="list__menu">
+                        <li class='list'> Главная </li>
+                        <li class='list'>Контакты</li>
+                        <li class='list'>Адрес магазина</li>
+                    </ul>
+                </div>
+                <div class="header__text">
+                    <h1 class=header__title>Список покупок </h1>
+                    <ul class='header__menu_none'>
+                        <li>Главная</li>
+                        <li>Контакты</li>
+                        <li>Адрес магазина</li>
+                        <li>Заказ продуктов</li>
+                        <li>Информация</li>
+                        <li><img class='header_img' src="hm.png" alt=""></li>
+                    </ul>
+                </div>
+                <div class="second__menu">
+                    <ul class="list__menu">
+                        <li>Заказ продуктов</li>
+                        <li>Информация</li>
+                        <li><img class='header_img' src="hm.png" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="main_container">
+                <div class="main__form">
+                    <form action="" id="form_buy__list">
+
+                        <label class=label__buylist for="buy">Введите ваши покупки</label>
+                        <input class=input__buylist id='input_buy__list' type="text" name="buy"
+                            placeholder="Введите название продуктов...">
+
+                    </form>
+                </div>
+                <div class="button__buylist">
+                    <button id='button_buy__list' type=" button">Добавить в список</button>
+                </div>
+
+                <div class="main__list">
+                    <h1 class="main__text">Ваш список покупок:</h1>
+                    <ul id="buy_list">
+                    </ul>
+                </div>
+            </div>
+        </main>
+
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
